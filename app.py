@@ -68,4 +68,6 @@ def test1():
 def test():
     return "<h1>Welcome to our server new !!</h1>"
 if __name__ =='__main__':
+    port = int(os.environ.get('PORT', 5000))
+    print(" Running on  port :{}".format(port))
     app.run(threaded=True)
